@@ -4,7 +4,8 @@
 - git clone project
 - cd (project-name-folder)
 - docker-compose build
-- docker-compose up -d
-- docker exec -it (project-name-folder)_app_1 bash
+- docker-compose up
+- docker ps (get container_id of project-name-folder_app_1 )
+- docker exec -it (container_id) bash
 - cd code/server
-- flask run
+- python3 app.py
